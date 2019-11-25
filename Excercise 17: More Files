@@ -1,0 +1,25 @@
+from sys import argv  # tell the CPU to import argv from System folder
+from os.path import exists  # importing "exists" feature from os.path package
+# This tells me whether or not a file exists and will denote true or false.
+
+script, from_file, to_file = argv  # create the variables for the files you want to work with
+
+print(f"Copying from {from_file} to {to_file}")  # User Feedback for file selections
+#  Even if there is no "to_file" by that user input. this script will generate a new file by that name
+# we could do these two on one line, How?
+in_file = open(from_file)  # Tell the Computer to open a file and save it to variable
+indata = in_file.read()  # Now that we've opened it we need to tell the computer to read it
+
+print(f"The input file is {len(indata)} bytes long")  # len() returns the length of the sequence data
+
+print(f"Does the output file exist? {exists(to_file)}")  # the Imported exists feature at work
+print("ready, hit RETURN to continue, Ctrl+C to abort.")
+input()
+
+out_file = open(to_file, "w")  # open this file in write mode
+out_file.write(indata)  # Now that its open we can write (indata) ( we need to open this before we can write)
+
+print("Alright, all done.")
+
+out_file.close()
+in_file.close()  # close both those files
