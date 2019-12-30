@@ -63,6 +63,7 @@ def convert(snippet, phrase):
     return results
 
 
+
 # keep going until they hit Ctrl+D
 try:
     while True:
