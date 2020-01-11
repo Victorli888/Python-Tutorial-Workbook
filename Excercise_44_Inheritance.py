@@ -43,4 +43,48 @@ son.inher()  # Inherit from Parent class
 daughter.inher()  # Inherit from same parent class
 son_of_son.inher() # Double inheritance?
 
+# Demonstrate Altering before or after
+
+class Parent2(object):
+
+    def altered(self):
+        print("Parent Altered()")
+
+
+class Child2(Parent2):
+
+    def altered(self):
+        print("Child Before Parent altered()")
+        super(Child2,self).altered()
+        print("Child, After Parent altered()")
+
+super()
+dad = Parent2()
+son = Child2()
+
+dad.altered()
+son.altered()
+
+# Demonstrate all 3 of these examples.
+
+class Parent3(object):
+
+    def override(self):
+        print("PARENT override()")
+
+    def implicit(self):
+        print("Parent implicit()")
+
+    def altered(self):
+        print("Parent altered()")
+
+class Child3(Parent3):
+
+    def override(self):
+        print("Child override()")
+
+    def altered(self):
+        print("Child, Before Parent altered().")
+        super(Child3, self).altered()
+        print("Child, After Parent altered().")
 
