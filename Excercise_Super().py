@@ -31,4 +31,24 @@ print(f'The perimeter of square is: {square.perimeter()}')
 
 # Understanding the mechanics of super() - super(P1,P2)
 # P1 - subclass P2 - object that is an instance of that subclass
+# for example we can use the super() that refers to square --- We'll call it cube
 
+
+class Cube(Square):
+
+    def surface_area(self):
+        face_area = super(Square, self).area()
+        return face_area * 6
+#  A simple breakdown: Face area of a cube is inherited from the area of Square which is inherited from the area of
+#  Rectangle... l*w = rectangle area, square area ; w = l, 6 * square area = surface area.
+
+    def volume(self):
+        face_area = super(Square, self).area()
+        return face_area * self.length
+
+# The volume of a square is l*l*l, l*l = face, so face * l = volume
+
+
+cube = Cube(3)
+print(f'The surface area of a cube is: {cube.surface_area()}')
+print(f'The volume of a cube is: {cube.volume()}')
