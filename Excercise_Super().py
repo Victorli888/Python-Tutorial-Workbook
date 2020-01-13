@@ -28,3 +28,7 @@ class Square(Rectangle):
 square = Square(3)
 print(f'The area of square is: {square.area()}')
 print(f'The perimeter of square is: {square.perimeter()}')
+
+# Understanding the mechanics of super() - super(P1,P2)
+# P1 - subclass P2 - object that is an instance of that subclass
+
