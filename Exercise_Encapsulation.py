@@ -92,3 +92,34 @@ class show(Mental_Math):
 
 
 do_math = show()
+
+mental = Mental_Math()
+
+print("\nExample 5: an exception")
+# Python doesn't truly have Private and Protected methods instead they do this by renaming the variable.
+
+
+class Car:
+
+    def __init__(self):
+        self.__software_updates()
+
+    def drive(self):
+        print("vroom vroom I'm driving.")
+
+    def __software_updates(self):
+        print("Updating vroom vroom software...")
+
+
+tesla = Car()
+tesla.drive()
+#  If I have no intention of updating the software again, I won't be able to outside of the class
+# tesla.__software_updates  # un-comment this and you will get an Attribute Error
+
+# That doesn't mean we can't force it to update though.
+tesla._Car__software_updates()
+
+# __software_updates method has simply been renamed to [_Car__software_updates()]
+
+# In python we can encapsulate accidental but not intentional access
+
