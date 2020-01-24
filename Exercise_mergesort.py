@@ -44,8 +44,8 @@ def mergesort(mylist):
 
 mylist = [52, 3, 44, 7, 12, 9, 34, 56, 83, 45, 23, 6, 4, 9, 22]
 
-# mergesort(mylist)
-# print(mylist)
+mergesort(mylist)
+print(mylist)
 
 
 
