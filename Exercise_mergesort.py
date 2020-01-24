@@ -18,8 +18,6 @@ def mergesort(mylist):
         # Iterator for the main list
         k = 0
 
-        #  The list is still in two halves at this point.
-
         while l < len(left) and r < len(right):  # continue this until both l & r are bigger than len(right) & len(left)
             if left[l] < right[r]:  # l & r represent the position of both lists ( left[] and right[])
                 # The value from the left half is being used
