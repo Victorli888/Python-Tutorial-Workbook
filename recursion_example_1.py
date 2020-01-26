@@ -63,6 +63,11 @@ deliver_recursively(houses)
 print("\nExample 3: recursive addition")
 # In this example we want to keep picking apples untill we have 9 apples in the basket
 def recursive_sum(number):
+    '''
+    Basically how to count 1+1+1+1 in the sense of recursive
+    :param number:
+    :return:
+    '''
     if number == 9:
         print("The basket has 9 apples")
     elif number > 9:
