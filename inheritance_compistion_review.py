@@ -18,7 +18,7 @@ class PayrollSystem:
         print("=====================")
         for employee in employees:
             print(f"The Payroll for {employee.id} - {employee.name}")
-            print(f"Is {employee.calculate_payroll()}")
+            print(f"Is {employee.calculate_payroll()} USD")
 
 
 class SalaryEmployee(Employee):
@@ -35,7 +35,7 @@ class HourlyEmployee(Employee):  # Is-A Employee
         self.hourly_wage = hourly_wage
 
     def calculate_payroll(self):
-        return self.hourly_wage
+        return self.hourly_wage * 40
 
 
 class CommissionedEmployee(SalaryEmployee):  # Is-A SalaryEmployee
