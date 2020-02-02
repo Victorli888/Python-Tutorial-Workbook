@@ -22,24 +22,23 @@ print("\nExample 2: A lot of Math home work")
 # in this example you need to multiply, divide, add, and subtract all the numbers from 1 to 10.
 # 1*1, 1/1, 1-1, 1+1 etc...
 
+class Math:
+    def mult(x):
+        return x*x
 
-def mult(x):
-    return x*x
-    print(f" {x} multiplied by {x} is:", x*x)
 
+    def divide(x):
+        return x//x
 
-def divide(x):
-    return x//x
+    def add(x):
+        return x+x
 
-def add(x):
-    return x+x
-
-def sub(x):
-    return x-x
+    def sub(x):
+     return x-x
 
 
 values = list(range(1, 11))
-functions = (mult, divide, add, sub)
+functions = (Math.mult, Math.divide, Math.add, Math.sub)
 
 for i in values:
     solution = list(map(lambda x: x(i), functions))
