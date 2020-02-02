@@ -34,7 +34,7 @@ class Math:
         return x+x
 
     def sub(x):
-     return x-x
+        return x-x
 
 
 values = list(range(1, 11))
