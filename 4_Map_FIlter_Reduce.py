@@ -22,23 +22,25 @@ print("\nExample 2: A lot of Math home work")
 # in this example you need to multiply, divide, add, and subtract all the numbers from 1 to 10.
 # 1*1, 1/1, 1-1, 1+1 etc...
 
-class Example2():
-    def __init__(self, x):
-        self.x = x
 
-    def mult(self):
-        return self.x*self.x
+def mult(x):
+    return x*x
+    print(f" {x} multiplied by {x} is:", x*x)
 
 
-    def divide(self):
-        return self.x/self.x
+def divide(x):
+    return x//x
 
-    def add(self, x):
-        return self.x+self.x
+def add(x):
+    return x+x
 
-    def sub(self, x):
-        return self.x-self.x
+def sub(x):
+    return x-x
 
 
 values = list(range(1, 11))
-functions = (Example2.mult(x), Example2.divide(x), Example2.add(x), Example2.sub(x))
+functions = (mult, divide, add, sub)
+
+for i in values:
+    solution = list(map(lambda x: x(i), functions))
+    print(f"for {i} the math solutions are : {solution}")
