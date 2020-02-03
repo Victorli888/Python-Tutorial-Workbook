@@ -78,10 +78,8 @@ print("\nExample 7 Sum up all the problems in your Math Homework")
 for i in values:
     solution = list(map(lambda x: x(i), functions))
     filter_zero = list(filter(lambda x: x > 0, solution))
-    print(f"For {filter_zero}")
     final_sum = reduce((lambda x6, y6: x6 + y6), filter_zero)
-    print(f"The final sum for each of solutions are: {final_sum}")
-
+    print(f"For {filter_zero}, The final sum is: {final_sum}")
 # SUMMARY:
 # map() applies a function to items in an input list
 # filter() If the item passes (true) KEEP IT, and if it fails (false) item is "filtered"
