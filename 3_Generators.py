@@ -63,4 +63,10 @@ print(next(gen))
 print("pause")
 print(next(gen))
 print("If I do it one more time I fail")
-#print(next(gen))
+
+print("\nExample 4: using iter()")
+# strings are iterable but are not an iterator, using iter() we can make it an iterator
+my_string = "This is a String"
+my_iter = iter(my_string)
+print(next(my_iter))
+# print(next(my_string))  # this fails, outputs: TypeError: 'str' object is not an iterator
