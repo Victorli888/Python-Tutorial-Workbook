@@ -16,11 +16,7 @@ current_file = open(input_file)
 print("first let's print the whole file: \n")
 print ("Name of the file: ", current_file.name)  # .name at the end tells python to name the file
 print_all(current_file)  # Call print_all function using "current_file" as variable f
-# print the entire current_file
-print("Now let's rewind, kind of like a tape.")
-# call rewind function using "current_file" as the variable f
-rewind(current_file)
-# since we printed the current file our reference point was at the end of the txt file. Now we're at the beginning.
+# print the entire current_file       # since we printed the current file our reference point was at the end of the txt file. Now we're at the beginning.
 print("lets print 3 lines;")
 
 current_line = 1  # creating a variable named current_line and setting it to "1"
