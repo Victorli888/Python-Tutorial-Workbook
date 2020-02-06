@@ -4,6 +4,7 @@ from functools import reduce
 print("Example 1: Map() Square the number")
 items = [1, 2, 3, 4, 5]
 
+
 def square(items):
     squared_nums = []
     for i in items:
@@ -23,10 +24,10 @@ print("\nExample 2: A lot of Math home work")
 # in this example you need to multiply, divide, add, and subtract all the numbers from 1 to 10.
 # 1*1, 1/1, 1-1, 1+1 etc...
 
+
 class Math:
     def mult(x):
         return x*x
-
 
     def divide(x):
         return x//x
