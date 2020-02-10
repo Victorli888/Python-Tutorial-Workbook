@@ -83,9 +83,9 @@ def doSomethingBeforeHi(func):
 
 doSomethingBeforeHi(hi4())
 
-print("\nExample 5: writing a decorator")
+print("\nExample 5: writing a decorator **IGNORE**")
 
-def decorator4(a_func):
+def decorator5(a_func):
 
     def wrapTheFunction():
         print("I am doing some boring work before executing a_func()")
@@ -103,16 +103,55 @@ def a_function_requiring_decoration():
 a_function_requiring_decoration()  # Outputs: "I need a decoration"
 print("Now let's wrap that string into decorator4 function\n")
 
+a_function_requiring_decoration = decorator5(a_function_requiring_decoration)
 
-a_function_requiring_decoration = decorator4(a_function_requiring_decoration)
+
 # a_function_requiring_decoration is wrapped by WrapTheFunction()
 # HOW DO I SET A FUNCTION WITH AN ARGUMENT FUNCTION TO A VARIABLE WITHOUT CALLING IT
+# you don't thats how, You can make and If statement if you want to have it in the code otherwise, Call on it like this
+#when it needs to be called.
 
-a_function_requiring_decoration()  # I DON'T NEED THIS BUT I DON't KNOW WHY
-# outputs: I am doing som boring work before executing a_func()
-#          I am doing work after executing a_func()
-#          I am doing some boring work after executing a_func()
 
 
 # I need to figure out when I should use parenthesis when calling a function
 # https://stackoverflow.com/questions/9768865/python-nonetype-object-is-not-callable-beginner
+
+print("\nExample 6: Short-hand version of Example 5 **IGNORE**")
+
+def a_function_requiring_decoration():
+    """hey you! Decorate me!"""
+    print("I am a function that needs decoration")
+
+
+a_function_requiring_decoration()
+
+print("\n\n\nExample 7:  Real World Decorator Example from Real Python")
+def sandwich(func):
+    def making_sandwich():
+        print("Top Bun")
+        func()
+        print("Bottom Bun")
+    return making_sandwich()
+
+def bologna():
+    print("Bologna")
+
+
+sandwich(bologna)
+
+print("\nExample 8: Lets make a sandwich at around noon")
+from datetime import datetime
+
+def lunch_time(func):
+    def noon():
+        if 12 <= datetime.now().hour < 14:  # range is Noon to 2 PM
+            print("Ah yes it is time to eat this...")
+            func()
+        else:
+            print("it's not lunch time")
+    return noon()
+
+def sandwich_8():
+    print("tasty Italian Club")
+
+lunch_time(sandwich_8)
