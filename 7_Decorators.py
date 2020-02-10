@@ -106,10 +106,13 @@ print("Now let's wrap that string into decorator4 function\n")
 
 a_function_requiring_decoration = decorator4(a_function_requiring_decoration)
 # a_function_requiring_decoration is wrapped by WrapTheFunction()
+# HOW DO I SET A FUNCTION WITH AN ARGUMENT FUNCTION TO A VARIABLE WITHOUT CALLING IT
 
-#a_function_requiring_decoration
+a_function_requiring_decoration()  # I DON'T NEED THIS BUT I DON't KNOW WHY
 # outputs: I am doing som boring work before executing a_func()
 #          I am doing work after executing a_func()
 #          I am doing some boring work after executing a_func()
 
 
+# I need to figure out when I should use parenthesis when calling a function
+# https://stackoverflow.com/questions/9768865/python-nonetype-object-is-not-callable-beginner
