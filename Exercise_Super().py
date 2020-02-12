@@ -52,3 +52,37 @@ class Cube(Square):
 cube = Cube(3)
 print(f'The surface area of a cube is: {cube.surface_area()}')
 print(f'The volume of a cube is: {cube.volume()}')
+
+print("\n\n\n\nExample2: Super() with Animals")
+
+class Animal:
+    def __init__(self, Animal):
+        print(Animal, "are a type of animal")
+
+class Mammal(Animal):
+    def __init__(self, mammalName):
+        print(mammalName, 'are a warm-blooded animal.')
+        super().__init__(mammalName)
+
+class WinglessMammal(Mammal):
+    def __init__(self, WinglessMammal):
+        print(WinglessMammal,"cannot fly")
+        super().__init__(WinglessMammal)
+
+class gilllessMammal(Mammal):
+    def __init__(self, gilllessMammal):
+        print(gilllessMammal, "cannot breath in water")
+        super().__init__(gilllessMammal)
+
+class Horse(WinglessMammal, gilllessMammal):
+    def __init__(self):
+        print('Horses have hooves')
+        super().__init__('horses')
+
+horse = Horse()
+print("")
+bat = gilllessMammal("bats")
+
+
+
+
