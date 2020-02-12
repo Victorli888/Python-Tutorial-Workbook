@@ -40,17 +40,60 @@ def pokemon():
     level4 = 5
 
 pokemon()
-print(f"A Level {level} {name} appeared!")
+print(f"A Level {level4} {name4} appeared!")
 
 print("\nThis time lets use return to call on multiple return values")
 def pikachu():
-    name = "Pikachu"
-    level = 17
+    name5 = "Pikachu"
+    level5 = 17
     return (name5, level5)
 
 pikachu_name, pikachu_level = pikachu()  # There is intent when creating these variables so its less risky
 print(f"A level {pikachu_level} {pikachu_name} appeared!")
 
 # wow very much good encapsulation
+print("\nThis is another way we could do this is this..")
+def cyndiquil():
+    name = "cyndiquil"
+    level = 22
+    return (name, level)
 
-print(level4)
+cyndiquil_info = cyndiquil()
+print(f"A level {cyndiquil_info[0]} {cyndiquil_info[1]} appeared!")
+
+print("\nExample 5: Using namedtuple")
+from collections import namedtuple
+
+
+from collections import namedtuple
+def suicune():
+    Pokemon = namedtuple('Pokemon', 'name level')  # Assign the the Pesudo Object, Assign the Arguments to that object
+    return Pokemon(name="Suicune", level=50)  #
+
+# Use as namedtuple   namedtuple(type_name, field names)
+s = suicune()
+print(s, type(s)) # This outputs: Person(name='Suicune', level=31) <class '__main__.Pokemon'>
+print(f"A wild level {s.level} {s.name} appeared")
+
+# Use as plain tuple
+s = suicune()
+print(f"A wild level {s[1]} {s[0]} appeared")
+
+# Unpack it immediatly
+name, level = suicune()
+print(f"A wild level {level} {name} appeared")
+
+print("For the funnies lets do this for all the Legendary Pokemon")
+
+def raikou():
+    Pokemon = namedtuple('Pokemon', 'name level')
+    return Pokemon(name="Raikou", level=50)
+
+def enti():
+    Pokemon = namedtuple("Pokemon", "name level")
+    return Pokemon(name="Enti", level=50)
+
+namedt
+
+print(f"A level {raikou().level} {raikou().name} appeared.")
+print(f'A level {enti().level} {enti().name} appeared.')
