@@ -83,6 +83,38 @@ horse = Horse()
 print("")
 bat = gilllessMammal("bats")
 
+print("\n Example 5: My own example with pokemon.")
 
+class Pokemon: # Parent
+    def __init__(self,Pokemon):
+        print(f"I am {Pokemon} as a pokemon I can do incredible things")
 
+class Firetype(Pokemon):
+    def __init__(self, name):
+        print(f"As a Fire-type {name} I can learn Flamethrower.")
+        super().__init__(name)
 
+class Watertype(Pokemon):
+    def __init__(self, name):
+        print(f"As a Water-type, {name} can learn Surf")
+        super().__init__(name)
+
+class Basic_Moves(Pokemon):
+    def __init__(self, name):
+        print(f"All Pokemon can learn these basic moves, The moves that {name} can learn are..."
+              f"\nTackle\nJump\nRun\nEat")
+        super().__init__(name)
+
+class Charizard(Firetype, Basic_Moves):
+    def __init__(self):
+        print(f"This is Charizard a species of flame Pokemon.")
+        super().__init__('Charizard')
+
+class Blastoise(Watertype,Basic_Moves):
+    def __init__(self):
+        print("This is Blastoise a species of water Pokemon.")
+        super().__init__("Blastoise")
+
+Charizard()
+print("\n")
+Blastoise()
