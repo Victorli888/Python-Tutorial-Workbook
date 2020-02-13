@@ -115,6 +115,8 @@ class Blastoise(Watertype,Basic_Moves):
         print("This is Blastoise a species of water Pokemon.")
         super().__init__("Blastoise")
 
-Charizard()
+print(Charizard.__mro__)  # method Resolution order
+print(Blastoise.mro())
+# Charizard()
 print("\n")
-Blastoise()
+# Blastoise()
