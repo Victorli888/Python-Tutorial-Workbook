@@ -18,3 +18,6 @@ mug2 += ["... Let's fill it with coffee"]
 print(mug1)
 # we put the string in a list and in Python Lists are mutable. and since mug 2 passes by reference changes to mug 2
 # also creates changes for mug 1.
+
+
+print("\nAnother Example involving functions and mutable data types.")
