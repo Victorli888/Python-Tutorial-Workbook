@@ -21,3 +21,28 @@ print(mug1)
 
 
 print("\nAnother Example involving functions and mutable data types.")
+def add_to(num, target=[]):
+    target.append(num)
+    return target
+
+print(add_to(1))   # outputs: [1]
+print(add_to(2)) # outputs: [1,2]
+print(add_to(3))  # outputs: [1,2,3]
+
+# since you're calling the function with a new set of data points, You'd think that it would create a fresh list so
+# Normally you would've expected something like this
+# [1]
+# [2]
+# [3]
+# BUT  due to mutability of lists, Python will evaluate arguments as soon as the functioned is defined not each
+# time it's called. It's not a good idea to to define default arguments in a mutable data type.
+
+print("\nOutput only the current argument")
+def add_to_2(num, target = None):
+    if target is None:
+        target = []
+    target.append(num)
+    return target
+print(add_to_2(1))
+print(add_to_2(2))
+print(add_to_2(3))
