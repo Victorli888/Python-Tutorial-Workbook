@@ -15,8 +15,8 @@ def merge_sort2(A, first, last):  # List A, First and last indices
 
 
 def merge(A, first, middle, last):  # list A, First, Middle, and Last index
-    L = A[first:middle]   # create a variable for the first half
-    R = A[middle:last+1]  # creating  a variable for the 2nd half.
+    L = A[first:middle+1]   # create a variable for the first half
+    R = A[middle+1:last+1]  # creating  a variable for the 2nd half.
     L.append(sys.maxsize)  # use these both these numbers...
     R.append(sys.maxsize)  # ...to know when you've reached the end of the list
     i = j = 0  # i for the right j for the left halves of the sort
@@ -37,6 +37,9 @@ list = [5,9,1,2,10,4,8,6,3,7]
 print(f"Your current list looks like this: {list}")
 merge_sort(list)
 print(f"Your sorted list looks like this: {list}")
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
 print("\n\n\nExample 2: Quick Sort")
 # Quick sort is Recursive Dive and Conquer algorithm that is very efficient for large data sets.
 
