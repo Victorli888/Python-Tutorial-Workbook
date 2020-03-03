@@ -51,24 +51,24 @@ print("\n\n\nExample 2: Quick Sort")
 # and all the elements larger than the pivot number to the right of the pivot element.
 
 def quick_sort(A):
-    quick_sort2(A, 0, len(A) - 1)
-
+    quick_sort2(A, 0, len(A) - 1) # the arguments will be passed as A, low, and hi in quicksort2
 
 def quick_sort2(A, low, hi):
-    if low < hi:
-        p = partition(A, low, hi)
-        quick_sort2(A, low, p - 1)
-        quick_sort2(A, p + 1, hi)
+    if low < hi:  # Essentially saying If there is more than one index to be sorted then.... do the following
+        p = partition(A, low, hi)  # the partition method will return our pivot
+        quick_sort2(A, low, p - 1)  # recursive method for left of the pivot
+        quick_sort2(A, p + 1, hi)  # recursive method for the right of the pivot
 
 
-def get_pivot(A, low, hi):
-    mid = (hi + low) // 2
-    s = sorted([A[low], A[mid], A[hi]])
-    if s[1] == A[low]:
-        return low
-    elif s[1] == A[mid]:
-        return mid
-    return hi
+def get_pivot(A, low, hi): # this will be used in the partition method
+    mid = (hi + low) // 2  # floor division the low and hi for the middle
+    pivot = hi
+    if A[low] < A[hi]:  # if index 0 < than index 9 then continue...
+        if A[mid] < A[hi]:  # if Index 5 is < index 9 then Pivot should be index 5 or mid
+            pivot = mid
+    elif A[low] == A[hi]:  # else if index 0 is equal to index 9 then pivot should be index 0
+        pivot = low
+    return pivot
 
 
 def partition(A, low, hi):
@@ -78,15 +78,15 @@ def partition(A, low, hi):
     border = low
 
     for i in range(low, hi + 1):
-        if A[i] < pivotValue:
-            border += 1
-            A[i], A[border] = A[border], A[i]
-    A[low], A[border] = A[border], A[low]
+        if A[i] < pivotValue:  # all indices smaller than the pivot value
+            border += 1 # add one to the border index
+            A[i], A[border] = A[border], A[i]  # swap
+    A[low], A[border] = A[border], A[low]  # swap
 
     return (border)
 
 
-def quick_selection(x, first, last):
+def quick_selection(x, first, last):  # not necessary but will help sort faster LOOK INTO THIS...
     for i in range(first, last):
         minIndex = i
         for j in range(i + 1, last + 1):
@@ -96,6 +96,8 @@ def quick_selection(x, first, last):
             x[i], x[minIndex] = x[minIndex], x[i]
 
 list = [5,9,1,2,4,8,6,3,7,10]
+list2 = sorted(list)
+print(list2)
 print(f"Your current list looks like this: {list}")
 quick_sort(list)
 print(f"Your sorted list looks like this: {list}")
