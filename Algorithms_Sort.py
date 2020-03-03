@@ -34,9 +34,11 @@ def merge(A, first, middle, last):  # list A, First, Middle, and Last index
 
 
 list = [5,9,1,2,10,4,8,6,3,7]
+
 print(f"Your current list looks like this: {list}")
 merge_sort(list)
 print(f"Your sorted list looks like this: {list}")
+
 
 # XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
