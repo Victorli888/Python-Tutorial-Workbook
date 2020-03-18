@@ -38,3 +38,16 @@ def bubbleSort(list):
     return list
 
 print(bubbleSort([5,1,4,3,6,8,9,0,2,7]))
+
+
+print("\n\nNotes: range(len(list)-1,0,-1)")
+# if we used len(list) it would put us outside the range of our list because our list starts at 0 take for example:
+# we have list with 10 elements,
+g = [5,1,4,3,6,8,9,0,2,7]
+print(f"If we were to take len(g) we would get {len(g)}")
+# but say we're trying to point to the last element in our list, Since python start referencing at 0 and not 1 for lists
+# the last element is in the 9th position not the 10th.
+# this means if we call on g[10] we will get an error because it is outside of the range of g
+
+# in other words, to simplfy range(len(list)-1,0,-1) we are simply saying:
+# range(last_element, First_element, go_backwards by 1)
