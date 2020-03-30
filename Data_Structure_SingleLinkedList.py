@@ -1,5 +1,7 @@
 # Nodes: Contain 2 parts Data and an Address that points to the location of the next node.
 
+https://dbader.org/blog/python-linked-list
+
 
 class ListNode:
 
