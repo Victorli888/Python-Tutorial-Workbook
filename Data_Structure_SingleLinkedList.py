@@ -9,7 +9,7 @@ class ListNode:
         self.data = data
         self.next = next
 
-    def __repr__(self):
+    def __repr__(self):  # prints "Official" string information
         return repr(self.data)
 
 
@@ -21,7 +21,7 @@ class SinglyLinkedList:
         """
         self.head = None
 
-    def __repr__(self):
+    def __repr__(self):  # prints object's information
         """Return a string. representation of the list. This takes O(n) Time."""
         nodes = []
         curr = self.head
