@@ -31,3 +31,18 @@ def merge_ranges(meetings):
 times = [(1, 2), (2, 3)]
 
 merge_ranges(times)
+
+"""
+algo - if end_first >= start_second:
+            start = start_first
+            end = end_second
+So, we could compare every meeting to every other meeting in this way,
+merging them or leaving them separate. => O(n^2)
+What if we sorted our list of meetings by start time?
+Then any meetings that could be merged would always be adjacent!
+So we could sort our meetings, then walk through the sorted list and see if
+each meeting can be merged with the one after it.
+Sorting takes O(nlgn) time in the worst case. If we can then do the merging in one pass,
+that's another O(n) time, for O(nlgn) overall.
+if input is sorted, we can avoid sorting and it takes O(n) for time and O(n) for space
+"""
