@@ -9,7 +9,7 @@ Everyone is available. Starting at 9AM
 
 def merge_ranges(meetings):
     # Sort by the time
-    sorted_meetings = sorted(meetings)
+    sorted_meetings = sorted(meetings)  # syntax: sorted(iterable, key, reverse)
 
     # initialize merged meetings with the earliest meeting
     merged_meetings = [sorted_meetings[0]]
@@ -20,6 +20,7 @@ def merge_ranges(meetings):
         # If the current meeting overlaps with the last merged meeting, use the later end time of the two
         if current_meetings_start <= last_merged_meetings_end:
             merged_meetings[-1] = (last_merged_meetings_start, max(last_merged_meetings_end, current_meetings_end))
+            # max() finds the largest item in an iterable.
 
         else:
             # Add the current meeting since it doesn't overlap
@@ -28,9 +29,12 @@ def merge_ranges(meetings):
     return merged_meetings
 
 
-times = [(1, 2), (2, 3)]
+times1 = [(1, 2), (4, 7), (2, 3), (7, 8)]  # (1,2) and (2,3) should merge (4,7) and (7,8) should too. ANS = (1,3) (4,8)
+times2 = [(1, 10), (2, 3), (2, 6), (3, 5)]  # since all values are between (1, 10) ans: (1, 10)
 
-merge_ranges(times)
+print(merge_ranges(times1))
+print(merge_ranges(times2))
+
 
 """
 algo - if end_first >= start_second:
