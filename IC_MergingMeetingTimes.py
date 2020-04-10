@@ -37,7 +37,7 @@ print(merge_ranges(times2))
 
 
 """
-algo - if end_first >= start_second:
+algorithm - if end_first >= start_second:
             start = start_first
             end = end_second
 So, we could compare every meeting to every other meeting in this way,
