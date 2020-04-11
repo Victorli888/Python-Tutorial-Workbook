@@ -35,7 +35,7 @@ def Reverse2(lista):
 list1 = [1,2,3,4,5,6]
 
 print(f"Method 1: {Reverse(list1)} \nNow lets reverse it back!")
-# Since we already reveresed once
+# Since we already reversed once
 print(f"Method 2: {Reverse2(list1)}")  # this would Reverse it back to its original answer
 
 
