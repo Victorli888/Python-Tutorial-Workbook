@@ -60,23 +60,37 @@ def merge_lists(lisas_list, alices_list):
     return merged_list
 
 
-
 # Victor's Solution
+"""
+Deeper explanation for the "Two cases in order to adding index_A to listC
+1. IF A is exhausted, then the end of the list has been reached. We cannot append any more items into the list
+2a. IF B is exhausted, then the end of B's list has been reached. We should append index_A
+2b. OR listB[index_B] >= listA[index_A], We intend to keep this sorted from smallest to largest. If B is larger we want
+to append A instead. 
+
+IF all these conditions fail then we want to append index_B to listC
+
+"""
 def merge_lists2(listA, listB):
+
     # init variables, Array size, Merged Array
     array_size = len(listA) + len(listB)
-    listC = [None] * array_size
+    listC = [None] * array_size  # this cannot be left as []  REVIEW
 
     index_A = 0
     index_B = 0
     index_C = 0
 
-
     # Start Merge, I will create check merge conditions for A
     while index_C < array_size:
-        exhaustedA = len(listA) <= index_A
+        exhaustedA = len(listA) <= index_A  # these must be in the while loop  REVIEW
         exhaustedB = len(listB) <= index_B
-        if not exhaustedA and (exhaustedB or listB[index_B] >= listA[index_A]):
+        if not exhaustedA and (exhaustedB or listB[index_B] >= listA[index_A]):  # REVIEW for practice
+            # Two cases in order to add index_A to listC
+            # 1. A is NOT exhausted (exhaustedA = false) AND,
+            # 2. either B IS exhausted OR curr_index of b is >= curr_index of A
+            # If both of these are True then we will proceed with the operation.
+
             listC[index_C] = listA[index_A]
             index_A += 1
         else:
@@ -88,10 +102,8 @@ def merge_lists2(listA, listB):
 
 
 
-
-
 lisa = [3,4,6,10,11,15]
 alice = [1,5,8,12,14,19]
 
-new_list = merge_lists(lisa, alice)
+new_list = merge_lists2(lisa, alice)
 print(new_list)
