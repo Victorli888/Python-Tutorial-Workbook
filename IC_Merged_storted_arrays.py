@@ -59,6 +59,37 @@ def merge_lists(lisas_list, alices_list):
 
     return merged_list
 
+
+
+# Victor's Solution
+def merge_lists2(listA, listB):
+    # init variables, Array size, Merged Array
+    array_size = len(listA) + len(listB)
+    listC = [None] * array_size
+
+    index_A = 0
+    index_B = 0
+    index_C = 0
+
+
+    # Start Merge, I will create check merge conditions for A
+    while index_C < array_size:
+        exhaustedA = len(listA) <= index_A
+        exhaustedB = len(listB) <= index_B
+        if not exhaustedA and (exhaustedB or listB[index_B] >= listA[index_A]):
+            listC[index_C] = listA[index_A]
+            index_A += 1
+        else:
+            listC[index_C] = listB[index_B]
+            index_B += 1
+        index_C += 1
+    return listC
+
+
+
+
+
+
 lisa = [3,4,6,10,11,15]
 alice = [1,5,8,12,14,19]
 
