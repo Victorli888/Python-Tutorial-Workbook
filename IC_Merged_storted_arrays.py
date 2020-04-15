@@ -67,8 +67,14 @@ Deeper explanation for the "Two cases in order to adding index_A to listC
 2a. IF B is exhausted, then the end of B's list has been reached. We should append index_A
 2b. OR listB[index_B] >= listA[index_A], We intend to keep this sorted from smallest to largest. If B is larger we want
 to append A instead. 
-
 IF all these conditions fail then we want to append index_B to listC
+
+
+Deeper explanation to why exhaustedA and exhaustedB values need to be in the while loop, when you keep it just outside
+of the loop with the other variables. When we call the method we do one check to see if A is exhausted, it returns 
+false and we move onto to our while loop. in our while loop, when we call on the value of exhaustedA it will always 
+return false NO MATTER WHAT because the value itself is false and we never call on it again to check it with our 
+new pointer values.
 
 """
 def merge_lists2(listA, listB):
