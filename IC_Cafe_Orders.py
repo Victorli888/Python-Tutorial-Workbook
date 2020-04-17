@@ -86,6 +86,45 @@ def FIFO(take_out, dine_in, queue):
     # All our orders have been processed and accounted for, this means we're following FIFO
     return True
 
+# this is an alternate solution
+def FIFO2(take_out,dine_in,queue):
+    # init pointers
+    take_out_pointer = 0
+    dine_in_pointer = 0
+    take_out_index_max = len(take_out)-1
+    dine_in_index_max = len(dine_in)-1
+
+    # Verify orders are being placed...
+    for order in queue:
+        take_out_exhausted = take_out_index_max < take_out_pointer
+        dine_in_exhausted = dine_in_index_max < dine_in_pointer
+
+        # IF take_out_index_max hasn't been reached AND take_out_pointer value == order then we can move our pointer
+        # we expect to only move our pointer value if the order has indeed been processed
+        if not take_out_exhausted and take_out[take_out_pointer] == order:
+            take_out_pointer += 1
+
+        # same IF for dine-in customers
+        elif not dine_in_exhausted and dine_in[dine_in_pointer] == order:
+            dine_in_pointer += 1
+
+        # If both dine-in and take-out orders aren't exhausted  or the order values don't match then that means we are
+        # not peforming FIFO so we need to return FALSE to show that our restaurant orders are not all accounted for
+        else:
+            return False
+
+        # Consider this edge case, What if our queue has less values than our take_out & dine_in  lists, even if they're
+        # exhausted and all the orders match something is wrong because we missing order in the queue that is not being
+        # accounted for.
+
+        # our lists are not exhausted and  the pointer values match so the for loop doesn't terminate, so we get a
+        # return true value
+
+        # we need to create a check to make sure all indexes in dine in and take out have been processed.
+    if dine_in_pointer != len(dine_in) or take_out_pointer != len(take_out):
+        return False
+
+    return True
 out = [1,3,5]
 dine_in = [2,4,6]
 served = [1,2,3,4,5,6]
