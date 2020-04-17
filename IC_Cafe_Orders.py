@@ -79,13 +79,12 @@ def FIFO(take_out, dine_in, queue):
         # That would mean it is not following FIFO
         else:
             return False
-    # peform a check if we've processed all the orders in take_out and dine_in
+    #peform a check if we've processed all the orders in take_out and dine_in
     if dine_in_index != len(dine_in) or take_out_index != len(take_out):
-        return False
+       return False
 
     # All our orders have been processed and accounted for, this means we're following FIFO
     return True
-
 
 out = [1,3,5]
 dine_in = [2,4,6]
