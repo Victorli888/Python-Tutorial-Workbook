@@ -40,4 +40,9 @@ def add_to_dict(word):
         words_to_counts[word] = 1
     return words_to_counts
 
-#
+string = "This is an input string of strings that string together strings by stringing them together"
+
+split = split_words(string)
+print(split)
+
+
