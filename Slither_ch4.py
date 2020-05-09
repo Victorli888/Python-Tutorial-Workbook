@@ -46,18 +46,24 @@ def fizzbuz(num_list):
 
 def fizzbuzz_game():
     print("Lets play fizzbuzz! What number do you choose?")
-    number = int(input())
+    try:  # can this string be converted from string to int?
+        number = int(input())
+        if number % 3 == 0 and number % 5 == 0:
+            print("fizz-buzz")
+        elif number % 3 == 0:
+            print("fizz")
+        elif number % 5 == 0:
+            print("buzz")
+        else:
+            print(number)
+        fizzbuzz_game()
+    except ValueError:  # Edge case for when string can't be converted to int
+        print("That is not a valid choice! please input a number")
+        input("Tap [Enter] to continue")
+        fizzbuzz_game()
 
-    if number % 3 == 0 and number % 5 == 0:
-        print("fizz-buzz")
-    elif number % 3 == 0:
-        print("fizz")
-    elif number % 5 == 0:
-        print("buzz")
-    else:
-        print(number)
 
-# how to create edge case for string that can't be converted to integer
+
 
 # For a List
 alist = [1, 14, 3, 10, 15, 20, 30, 3, 12]
