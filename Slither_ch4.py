@@ -23,6 +23,22 @@ You're going to need the formula for the distance between two points to solve th
 
 # Question 1.
 
+# inputs for 3 sides
+a = int(input("Enter Side 1: "))
+b = int(input("Enter Side 2: "))
+c = int(input("Enter Side 3: "))
+
+# Result for boolean
+a_as_hyp = a == ((b**2) + (c**2)) ** .5  # is side a equal to the (pythagoras theorem)
+b_as_hyp = b == ((a**2) + (c**2)) ** .5
+c_as_hyp = c == ((a**2) + (b**2)) ** .5
+
+if a_as_hyp or b_as_hyp or c_as_hyp:
+    print("These sides form a Right Triangle!")
+else:
+    print("This does not form a right triangle.")
+# Check if a is the hypotnuse
+
 # Question 2.
 
 # For a list of numbers
@@ -73,3 +89,5 @@ print(ans)
 
 # For a single input
 fizzbuzz_game()
+
+# Question 3:
