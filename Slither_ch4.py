@@ -28,12 +28,13 @@ a = int(input("Enter Side 1: "))
 b = int(input("Enter Side 2: "))
 c = int(input("Enter Side 3: "))
 
-# Result for boolean
-a_as_hyp = a == ((b**2) + (c**2)) ** .5  # is side a equal to the (pythagoras theorem)
+
+# Results = value of a is equal to pythagoras Math theorem
+a_as_hyp = a == ((b**2) + (c**2)) ** .5
 b_as_hyp = b == ((a**2) + (c**2)) ** .5
 c_as_hyp = c == ((a**2) + (b**2)) ** .5
 
-if a_as_hyp or b_as_hyp or c_as_hyp:
+if a_as_hyp or b_as_hyp or c_as_hyp:  # Print if all result conditions are true
     print("These sides form a Right Triangle!")
 else:
     print("This does not form a right triangle.")
@@ -91,3 +92,25 @@ print(ans)
 fizzbuzz_game()
 
 # Question 3:
+
+# Create input variables
+print("Please input x,y coordinates and the radius of circle one. ")
+x1 = int(input("x1: "))
+y1 = int(input("y1: "))
+r1 = int(input("r1: "))
+input("Thank you. Press [Enter to continue]")
+print("Please input x,y coordinates and the radius of circle two. ")
+x2 = int(input("x2: "))
+y2 = int(input("y2: "))
+r2 = int(input("r2: "))
+
+# Calculate
+distance = ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5  # Distance Formula
+total_radius = r1 + r2
+
+# If the distance between two circles is greater than the or equal to the total radius then the circles overlap
+if distance >= total_radius:
+    print("These circles don't Overlap.")
+else:
+    print("These circles overlap.")
+
