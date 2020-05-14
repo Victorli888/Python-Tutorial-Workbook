@@ -53,6 +53,8 @@ EXAMPLE OUTPUT
 """
 
 # Question 1: How many decimals are in e? syntax: "{}".format(x)
+
+
 def decimals_of_e():
     e = 2.7182818284590452353602874713527
     print(" e is 2.7182818284590452353602874713527, to how many decimals would you like to reduce this to?")
@@ -71,6 +73,36 @@ def decimals_of_pi():
 # decimals_of_e()
 # decimals_of_pi()
 
+# Question 2: String Cutter
 
 
+"""
+Note:
+string_cutter() & string_cutter_2 method doesn't accept negative answers and only cuts with positive whole integers
+. For example to cut string[-11:-5] for string = Hello World would need different logic. Personally I would use a 
+Try and Except Exception Handling
+"""
 
+
+def string_cutter():   # my solution
+    a_string = input("Enter string to be cut: ")
+    lower_index = int(input("Enter lower index to be cut from: "))
+    upper_index = int(input("Enter upper index to be cut from: "))
+
+    if upper_index >= lower_index:
+        print(a_string[lower_index:upper_index])
+    else:
+        print("invalid try again")
+        string_cutter()
+
+
+def string_cutter_2():  # Book solution
+    a_string = input("Enter string to be cut: ")
+    lower_index = int(input("Enter lower index to be cut from: "))
+    upper_index = int(input("Enter upper index to be cut from: "))
+
+    if len(a_string) < lower_index or len(a_string) < upper_index:
+        # We can't have an index larger than the amount of indices in our string
+        print("This string can't be cut")
+    else:
+        print(a_string[lower_index:upper_index])
