@@ -125,6 +125,19 @@ def split(word):
     return [char for char in word]
 
 
+def score_checker(total_score):
+    if total_score == 4:
+        print("This is a strong password")
+    elif total_score == 3:
+        print("This is a good password")
+    elif total_score == 2:
+        print("This is a fair password")
+    else:
+        print("This is a weak password\n")
+        input("Tap [Any Key] to continue")
+        password()
+
+
 def password():
 
     # items
@@ -138,7 +151,13 @@ def password():
 
     # Take a user input
     print("Please create a new password (Do not use these special characters ()\{}|+></~`)")
+    print("Password should be at least 7 Characters")
     ans = input("Create a password: ")
+
+    if len(ans) >= 7:
+        pass
+    else:
+        password()
 
     i = 0  # current index for string from user input.
 
@@ -162,21 +181,10 @@ def password():
             number_score = 1
         elif split_up_string[i] in special:
             special_score = 1
-        else:
-            print("That password is not valid, try a different one. Remember Do not include ()\{}|+></~`)")
         i += 1
 
     total_score = lower_case_score + upper_case_score + number_score + special_score
-
-    if total_score == 4:
-        print("This is a strong password")
-    elif total_score == 3:
-        print("This is a good password")
-    elif total_score == 2:
-        print("This is a fair password")
-    else:
-        print("This is a weak password")
-        password()
+    score_checker(total_score)
 
 
 password()
