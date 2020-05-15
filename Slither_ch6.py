@@ -102,7 +102,81 @@ def string_cutter_2():  # Book solution
     upper_index = int(input("Enter upper index to be cut from: "))
 
     if len(a_string) < lower_index or len(a_string) < upper_index:
-        # We can't have an index larger than the amount of indices in our string
-        print("This string can't be cut")
+        # We can't have an index larger than the total amount of indices in our string
+        print("This string can't be cut from these these indices")
     else:
         print(a_string[lower_index:upper_index])
+
+# Question 3: Password Security
+
+
+"""
+What determines password strength:
+Weak:  Lower case only, or Upper Case Only
+Fair: Mixture of Upper & Lower Case
+Good:  Mixture of Upper & Lower Case + Numbers
+Strong: Mixture of Upper & Lower Case + Numbers + Special Characters
+"""
+
+# Brute Force Method:
+
+
+def split(word):
+    return [char for char in word]
+
+
+def password():
+
+    # items
+    upper_case = ["A","B","C","D","E","F","G","H","I","J","K",'L','M','N','O','P','Q','R','S','T','U','V','W','X','Y'
+        ,'Z']
+    lower_case = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y",
+                  "z"]
+    numbers = ["1",'2','3','4','5','6','7','8','9','0']
+
+    special = ["!",'@','#','$','%','^','&','*','_','-','?']
+
+    # Take a user input
+    print("Please create a new password (Do not use these special characters ()\{}|+></~`)")
+    ans = input("Create a password: ")
+
+    i = 0  # current index for string from user input.
+
+    # scores that will increase by 1, if they have a lowercase, upper, number, or special character
+    lower_case_score = 0
+    upper_case_score = 0
+    number_score = 0
+    special_score = 0
+
+    split_up_string = split(ans)  # split up characters in array
+
+
+# Run through the string array split_up_string and if true set password_trait_score to 1
+    while i < len(split_up_string):
+
+        if split_up_string[i] in lower_case:
+            lower_case_score = 1
+        elif split_up_string[i] in upper_case:
+            upper_case_score = 1
+        elif split_up_string[i] in numbers:
+            number_score = 1
+        elif split_up_string[i] in special:
+            special_score = 1
+        else:
+            print("That password is not valid, try a different one. Remember Do not include ()\{}|+></~`)")
+        i += 1
+
+    total_score = lower_case_score + upper_case_score + number_score + special_score
+
+    if total_score == 4:
+        print("This is a strong password")
+    elif total_score == 3:
+        print("This is a good password")
+    elif total_score == 2:
+        print("This is a fair password")
+    else:
+        print("This is a weak password")
+        password()
+
+
+password()
