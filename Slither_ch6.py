@@ -187,4 +187,4 @@ def password():
     score_checker(total_score)
 
 
-password()
+#password()
