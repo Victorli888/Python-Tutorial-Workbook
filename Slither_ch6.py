@@ -134,8 +134,6 @@ def score_checker(total_score):
         print("This is a fair password")
     else:
         print("This is a weak password\n")
-        input("Tap [Any Key] to continue")
-        password()
 
 
 def password():
@@ -187,4 +185,51 @@ def password():
     score_checker(total_score)
 
 
-#password()
+# password()
+
+# This time using the string methods
+
+
+"""
+s.isalnum() Returns True if s is a non-empty and all its characters are alpha numeric, otherwise returns false
+s.isalpha() Returns True if s is non-empty and all characters are Alphabetic, otherwise returns false
+s.isdigit() Returns True if s is non-empty and all characters can be casted to integers, otherwise returns false
+"""
+
+
+def password_creator():
+    ans= input("Please Enter your password: ")
+
+    contains_digit  = False
+    contains_lower = False
+    contains_upper = False
+    contains_special = False
+
+    special_chars = "!@#$%^&*"
+
+    password_strength = 0
+
+    i = 0
+    while i < len(ans):
+        curr = ans[i]
+        if curr.isdigit() and not contains_digit:
+            password_strength += 1
+            contains_digit = True
+
+        elif curr.isalpha() and curr.islower() and not contains_lower:
+            password_strength += 1
+            contains_lower = True
+
+        elif curr.isalpha() and curr.isupper() and not contains_upper:
+            password_strength += 1
+            contains_upper = True
+
+        elif curr in special_chars and not contains_special:
+            password_strength += 1
+            contains_special = True
+
+        i += 1
+
+    score_checker(password_strength)
+
+password_creator()
