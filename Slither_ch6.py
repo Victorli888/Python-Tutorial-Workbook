@@ -237,12 +237,12 @@ def password_creator():
 # Question 4: Create a Table that charts the Radius, Area, and surface volume of a sphere.
 
 
-def sphere_chart():
-    pi = 3.14159265359
-    radius = int(input("Enter Radius: "))
-    inc = int(input("Enter Increment: "))
-    end = int(input("Enter Ending Radius "))
+"""
+{[: <align> <minimum width> <.precision> <type>]} where square brackets indicate optional parameters.
+"""
 
+def sphere_chart(radius, inc, end):
+    pi = 3.14159265359
     max_width = 42
 
     print("{:>10s}{:>16s}{:>16s}".format("Radius", "Area", "Volume"))
@@ -257,4 +257,4 @@ def sphere_chart():
         i += 1
 
 
-sphere_chart()
+sphere_chart(1, 1, 10)
