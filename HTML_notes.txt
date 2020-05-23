@@ -1,0 +1,10 @@
+<!DOCTYPE html>  # This tag specifies the language you'll be writing in
+<html lang="en">  # This tag signals that from here on out we're writing HTML code.
+<head>  # This is where all the metadata for the page goes -- typically meant for search engines, and computer programs
+    <meta charset="UTF-8">  # this is where info about the document is stored
+    <title>Title</title>  # This is where we insert the page name as it will appear at the top of the browser tab
+</head>
+<body>  # This is where the content of the page will go.
+
+</body>
+</html>
