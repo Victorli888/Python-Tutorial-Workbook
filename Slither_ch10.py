@@ -37,7 +37,7 @@ standard output. (No redirection)
 # standard input = stdin
 # read() - Reads the entire contents of the file and entire contents will be assigned to a single string
 # readlines() - stores each line as an element in a list
-# readline() - reads only  a single line from standard input, arguably the best because  it can save memory.
+# readline() - reads only a single line from standard input, arguably the best because  it can save memory.
 
 
 def reader():
@@ -74,20 +74,26 @@ Question 4: Write a program that takes the contents of a file and determines whe
 Words that are Palindromes should return True, else false.Capitals and spaces should not effect the answer.
 
 """
+# with statement clarifies code that would use try... finally blocks to ensure clean-up code is executed.
+# with statement will handle closing the file for us
 
 
 def palindrome():
+    # take a standard input file
     file_name = sys.argv[1]
 
+    # Open the file
     with open(file_name, "r") as f:
-        word = f.readline().strip()
+        # contents in opened file as usable variable "word"
+        word = f.readline().strip()  # readline() - reads only a single line from standard input,
         while word:
-            processed = word.replace(" ", "").lower()
-            if processed == processed[::-1]:
+            processed = word.replace(" ", "").lower()  # remove all spaces and change all to lowercase.
+            if processed == processed[::-1]:  # [::-1] from start to finish but go backwards
                 print(True)
             else:
                 print(False)
-            word = f.readline().strip()
+            word = f.readline().strip()  # strip() removes the trailing and leading white space
 
 
-palindrome()
+# palindrome()
+
