@@ -37,4 +37,41 @@ def shop_stock():
         print("{:>{}s} : {}".format(product, longest_key, stock))
 
 
-shop_stock()
+# shop_stock()
+
+
+"""
+Question 2: Write a program that reads a txt file of CONTACT DETAILS, each CONTACT will have: NAME, NUMBER, & EMAIL
+Your dictionary should map from the name ( Key: NAME Value: NUMBER & EMAIL )
+INPUT: should be a single NAME
+OUTPUT: should be NUMBER & EMAIL
+"""
+
+
+def contact_info():
+    contacts = {}
+
+    filename = sys.argv[1]
+
+    with open(filename, "r") as f:
+        # Read in data lin b line
+        for line in f.readlines():
+            tokens = line.strip().split()
+
+            name = tokens[0]
+            number = tokens[1]
+            email = tokens[2]
+
+            contacts[name] = {"number": number, "email": email}
+
+    lookup_name = input()
+    while lookup_name:
+        if lookup_name in contacts:
+            print(f"Name: {lookup_name}\nEmail: {contacts[lookup_name][email]}\nNumber: {contacts[lookup_name][number]}")
+        else:
+            print("No contacts found")
+
+        lookup_name = input()
+
+
+contact_info()
