@@ -80,8 +80,6 @@ def fizzbuzz_game():
         fizzbuzz_game()
 
 
-
-
 # For a List
 alist = [1, 14, 3, 10, 15, 20, 30, 3, 12]
 ans = fizzbuz(alist)
@@ -113,4 +111,3 @@ if distance >= total_radius:
     print("These circles don't Overlap.")
 else:
     print("These circles overlap.")
-
