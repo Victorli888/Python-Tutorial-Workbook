@@ -48,30 +48,40 @@ OUTPUT: should be NUMBER & EMAIL
 """
 
 
-def contact_info():
+def contact_search():
+    # create a dictionary
     contacts = {}
 
+    # Open system file
     filename = sys.argv[1]
 
+    # Read system file
     with open(filename, "r") as f:
-        # Read in data lin b line
-        for line in f.readlines():
-            tokens = line.strip().split()
+        # Read file line by line
+        for line in f.readlines():  # for file named f read line by line and set to variable "line"
+            tokens = line.strip().split()  # for each line create a list of items separated by the spaces in between
 
+            # Designate each list item as a working variable
             name = tokens[0]
-            number = tokens[1]
-            email = tokens[2]
+            email = tokens[1]
+            phone = tokens[2]
 
-            contacts[name] = {"number": number, "email": email}
+            # Append dictionary items so that name is the KEY and email & phone is the VALUE
+            contacts[name] = {"phone": phone, "email": email}
 
-    lookup_name = input()
-    while lookup_name:
-        if lookup_name in contacts:
-            print(f"Name: {lookup_name}\nEmail: {contacts[lookup_name][email]}\nNumber: {contacts[lookup_name][number]}")
-        else:
-            print("No contacts found")
+            # User input, and search for name from dictionary
+            user_search = input("Please enter a name to search: ")
 
-        lookup_name = input()
+            while user_search:  # Run this loop as long as there is an input
+                if user_search in contacts:
+                    print("Name: " + user_search)
+                    print("Email: " + contacts[user_search]["email"])
+                    print("Phone: " + contacts[user_search]["phone"])
+
+                else:
+                    print("No such contact found. Please try again...")
+
+                user_search = input()
 
 
-contact_info()
+contact_search()
