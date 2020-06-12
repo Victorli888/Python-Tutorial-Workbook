@@ -53,6 +53,7 @@ def contact_search():
     contacts = {}
 
     # Open system file
+
     filename = sys.argv[1]
 
     # Read system file
@@ -85,3 +86,47 @@ def contact_search():
 
 
 contact_search()
+
+"""
+Question 3: Create a program that counts and outputs how many times a word appears in a text.
+
+* Punctuation Matters
+* Should not be Case-sensitive
+
+"""
+
+
+def word_counter():
+
+    # Select file input
+    filename = sys.argv[1]
+
+    # Create Dictionary
+    word_count = {}
+
+    # read and strip
+    with open(filename, "r") as f:
+        full_txt = f.read().strip()
+
+    # Change all letters to lower-case to allow case sensitivity
+    full_txt = full_txt.lower()
+
+    # split text to words
+    words = full_txt.split()
+
+    # Conditions
+    for word in words:
+        if word[0] in punc:
+            word = word.replace(word[0], "")
+        elif word[-1] in punc:
+            word = word.replace(word[-1], "")
+
+        if word not in word_count:
+            word_count[word] = 1
+        else:
+            word_count[word] += 1
+
+    for word, count in word_count.items():
+        print(word + " : " + str(count))
+
+    # Done
