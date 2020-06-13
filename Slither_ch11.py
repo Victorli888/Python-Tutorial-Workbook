@@ -85,7 +85,7 @@ def contact_search():
                 user_search = input()
 
 
-contact_search()
+# contact_search()
 
 """
 Question 3: Create a program that counts and outputs how many times a word appears in a text.
@@ -115,18 +115,20 @@ def word_counter():
     words = full_txt.split()
 
     # Conditions
+    # Remove Punctiation from words
     for word in words:
         if word[0] in punc:
             word = word.replace(word[0], "")
         elif word[-1] in punc:
             word = word.replace(word[-1], "")
-
+        # Add items to word count dictionary or add to the count if it exits prior
         if word not in word_count:
             word_count[word] = 1
         else:
             word_count[word] += 1
-
+    # Show the word count
     for word, count in word_count.items():
         print(word + " : " + str(count))
 
-    # Done
+
+word_counter()
