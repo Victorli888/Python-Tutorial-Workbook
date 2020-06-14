@@ -131,4 +131,26 @@ def word_counter():
         print(word + " : " + str(count))
 
 
-word_counter()
+# word_counter()
+
+"""
+Question 4: Write a Program that takes two dictionaries and outputs their intersection. Any intersections should be
+a THIRD DICTIONARY.
+"""
+
+
+def dict_intersect(dict_1, dict_2):
+    intersection = {}
+
+    for key in dict_1.keys():
+        if key in dict_2:
+            intersection[key] = True
+
+    print(intersection)
+
+
+d1 = {"k1": True, "k2": True, "k3": True, "k4": True}
+d2 = {"k6": True, "k2": True, "k5": True, "k1": True, "k8": True, "k4": True}
+
+dict_intersect(d1, d2)
+
