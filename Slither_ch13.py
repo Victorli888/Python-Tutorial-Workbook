@@ -1,3 +1,4 @@
+from random import randint
 """
 Binary Search Review
 Imagane a number line from 0 to 100 and in between it a magic number. Binary Search follows this procedure
@@ -57,7 +58,7 @@ Textbook Example:
                                 # that low < high fails i.e low == high
 """
 
-
+arr = list(range(0, 100))
 def binary_search(arr, elem):
     low = 0                      # Define initial low value.
     high = len(arr)              # Define initial high value.
@@ -72,7 +73,31 @@ def binary_search(arr, elem):
     return low              # Return the position of the element we're searching for.
                             
 
-ex = list(range(1, 101))
-print(ex)
-ans = binary_search(ex, 29)
-print(ans)
+# Problem 1: Create Number Guessing by implementing binary search
+
+def guessing():
+
+    # create an array of numbers and a random number to find.
+
+    arr = list(range(0, 100))  # you could also do [x for x in range(0, 100)]
+    secret = randint(0, len(arr))
+
+    low = 0  # MINIMUM NUMBER
+    high = len(arr)  # MAXIMUM NUMBER
+    i = 0  # counter for how many guesses were made
+    while low < high and i < 20:  # program will terminate after 20 guesses
+        mid = (low + high) // 2
+
+        if arr[mid] < secret:  # if middle is smaller than secret, then min number must be larger than middle
+            low = mid + 1  # secret can't be any lower than mid so we use the next index over (mid + 1)
+            
+        else:  # ELSE, the middle is bigger than secret, than the max number must be smaller than middle
+            high = mid  # secret can't be higher than middle so it becomes our new high
+        i += 1
+
+    if i < 20:
+        print(f"secret number is: {low}")
+    else:
+        print("looks like you were unable to guess the secret number")
+
+
