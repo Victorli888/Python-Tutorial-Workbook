@@ -19,7 +19,7 @@ def diag_diff(arr):
         j += 1
 
     j = 0
-    i = 2
+    i = len(arr) - 1
 
     for item in arr:
         rld += arr[i][j]
@@ -41,3 +41,5 @@ test_2 = [[10, 2, 3],
 
 print(diag_diff(test_1))
 print(diag_diff(test_2))
+
+print(len(test_1))
