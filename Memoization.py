@@ -48,8 +48,7 @@ class Fibber:
 
         # Memorize
         self.memo[n] = result
-        print(self.memo)
-
+    
         return result
 
 
