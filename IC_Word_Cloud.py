@@ -44,5 +44,3 @@ string = "This is an input string of strings that string together strings by str
 
 split = split_words(string)
 print(split)
-
-
