@@ -1,0 +1,24 @@
+"""
+Hacker Rank Question Link: https://www.hackerrank.com/challenges/birthday-cake-candles/problem
+
+- Candles on a birthday cake are being blown out by your niece, She can only blow out a particular height at time
+- The function only needs to return the number of candles blown out at the tallest level.
+
+My solution: Space Complexity: O(1)  Time Complexity: O(n)
+"""
+
+
+def bday_candles(ar):  # Where n is the number of staircases high
+    tallest = max(ar)  # Tallest Candle on the birthday cake
+    count = 0
+    for i in ar:  # run through each index in the array
+        if i == tallest:  # if that index in the array is equal to the tallest candle
+            count += 1  # add it to the count of candles your niece can blow out
+    return count
+
+
+# Test input and output
+if __name__ == '__main__':
+    array = [1, 1, 3, 3]
+    x = bday_candles(array)
+    print(x)
