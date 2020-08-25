@@ -24,7 +24,7 @@ if __name__ == '__main__':
     curved_grades = grade_curve(my_grades)
     print(curved_grades)
 
-test1 = [71, 72, 73, 74, 75, 76, 77, 78, 79, 80]
+test1 = [71, 72, 73, 74, 75, 76, 77, 78, 79, 80]  # Expected: [71, 72, 75, 75, 75, 76, 77, 80, 80, 80]
 
 m = grade_curve(test1)
 print(m)
