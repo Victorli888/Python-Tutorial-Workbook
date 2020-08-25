@@ -12,8 +12,8 @@ def grade_curve(grades):  # input is an array
     for i in range(len(grades)):
 
         if grades[i] > 37:
-            if (grades[i] % 5) != 0:
-                if 5 - (grades[i] % 5) < 3:
+            if (grades[i] % 5) != 0:  # if grade is 80% or 90% then it is already rounded up
+                if 5 - (grades[i] % 5) < 3:  # if it is not within the 2% grade range it shouldn't be rounded
                     grades[i] += 5 - (grades[i] % 5)
     return grades
 
