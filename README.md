@@ -7,3 +7,4 @@ From zero experience to intermediate, all the concepts learned and practiced in 
 * [Python Central Data Structures Tutorial](https://www.pythoncentral.io/series/python-data-structures-tutorial/)
 * [Intermediate Python Tips](http://book.pythontips.com/en/latest/index.html)
 * [Hacker Rank Problems](https://www.hackerrank.com/)
+* [Automate The Boring Stuff](https://automatetheboringstuff.com/)
