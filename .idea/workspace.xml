@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3db25bd-f692-479b-a55e-360926d42439" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Python-Tutorial-Workbook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python-Tutorial-Workbook.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,10 +21,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="9d1e94ef-c6e6-487a-b38e-cbea94ad8511" />
   <component name="ProjectId" id="1W0C2D2yE6ojGoCyoRDg5f2r5Hn" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -36,7 +38,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.3_Generators">
+  <component name="RunManager" selected="Python.test">
     <configuration name="3_Generators" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python-Tutorial-Workbook" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -81,6 +83,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Note_1_ForLoop" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python-Tutorial-Workbook" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Note_1_ForLoop.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="inheritance_composition_program" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python-Tutorial-Workbook" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -103,78 +127,89 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python-Tutorial-Workbook" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.Note_1_ForLoop" />
         <item itemvalue="Python.3_Generators" />
         <item itemvalue="Python.4_Map_FIlter_Reduce" />
         <item itemvalue="Python.inheritance_composition_program" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c805a244-cd4e-4b4b-8f16-fdd32495bc0f" name="Default Changelist" comment="" />
+      <changelist id="c3db25bd-f692-479b-a55e-360926d42439" name="Default Changelist" comment="" />
       <created>1580109715618</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580109715618</updated>
       <workItem from="1580109717098" duration="684000" />
       <workItem from="1580182775613" duration="18575000" />
+      <workItem from="1598995485553" duration="22674000" />
+      <workItem from="1599703089266" duration="4758000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="304" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580187922250">
-      <screen x="0" y="23" width="1680" height="957" />
-    </state>
-    <state x="304" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.957@0.23.1680.957" timestamp="1580187922250" />
-    <state width="1126" height="294" key="GridCell.Tab.0.bottom" timestamp="1580802067176">
+    <state x="547" y="329" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599149199400">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="294" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1580802067176" />
-    <state width="1638" height="257" key="GridCell.Tab.0.bottom/0.23.1680.957@0.23.1680.957" timestamp="1580188963901" />
-    <state width="1126" height="294" key="GridCell.Tab.0.center" timestamp="1580802067174">
+    <state x="547" y="329" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1599149199400" />
+    <state x="547" y="345" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1598999822885" />
+    <state width="341" height="952" key="GridCell.Tab.0.bottom" timestamp="1599723096047">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="294" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1580802067174" />
-    <state width="1638" height="257" key="GridCell.Tab.0.center/0.23.1680.957@0.23.1680.957" timestamp="1580188963900" />
-    <state width="1126" height="294" key="GridCell.Tab.0.left" timestamp="1580802067173">
+    <state width="341" height="952" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1599723096047" />
+    <state width="454" height="609" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1599005753210" />
+    <state width="341" height="952" key="GridCell.Tab.0.center" timestamp="1599723096045">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="294" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1580802067173" />
-    <state width="1638" height="257" key="GridCell.Tab.0.left/0.23.1680.957@0.23.1680.957" timestamp="1580188963899" />
-    <state width="1126" height="294" key="GridCell.Tab.0.right" timestamp="1580802067175">
+    <state width="341" height="952" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1599723096045" />
+    <state width="454" height="609" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1599005753209" />
+    <state width="341" height="952" key="GridCell.Tab.0.left" timestamp="1599723096045">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="294" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1580802067175" />
-    <state width="1638" height="257" key="GridCell.Tab.0.right/0.23.1680.957@0.23.1680.957" timestamp="1580188963900" />
-    <state x="341" y="140" key="SettingsEditor" timestamp="1580109738444">
-      <screen x="0" y="23" width="1680" height="957" />
-    </state>
-    <state x="341" y="140" key="SettingsEditor/0.23.1680.957@0.23.1680.957" timestamp="1580109738444" />
-    <state x="505" y="230" width="670" height="742" key="search.everywhere.popup" timestamp="1580520473111">
+    <state width="341" height="952" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1599723096045" />
+    <state width="454" height="609" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1599005753209" />
+    <state width="341" height="952" key="GridCell.Tab.0.right" timestamp="1599723096046">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="505" y="230" width="670" height="742" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1580520473111" />
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.23.1680.957@0.23.1680.957" timestamp="1580187497248" />
+    <state width="341" height="952" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1599723096046" />
+    <state width="454" height="609" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1599005753210" />
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1599004162525">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1599004162525" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -191,5 +226,67 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$HR_Staircase.coverage" NAME="HR_Staircase Coverage Results" MODIFIED="1597816485550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Slither_ch12.coverage" NAME="Slither_ch12 Coverage Results" MODIFIED="1593283360027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$13_Enumerate.coverage" NAME="13_Enumerate Coverage Results" MODIFIED="1583350185769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$10_slots_magic.coverage" NAME="10_slots_magic Coverage Results" MODIFIED="1581963680346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$IC_MergingMeetingTimes.coverage" NAME="IC_MergingMeetingTimes Coverage Results" MODIFIED="1586720343685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$IC_Cafe_Orders.coverage" NAME="IC_Cafe_Orders Coverage Results" MODIFIED="1587115612929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Slither_ch6.coverage" NAME="Slither_ch6 Coverage Results" MODIFIED="1589820445079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Data_Structure_Circular_Queue.coverage" NAME="Data_Structure_Circular_Queue Coverage Results" MODIFIED="1584750833422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$HR_GradingStudents.coverage" NAME="HR_GradingStudents Coverage Results" MODIFIED="1598389153908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Slither_Ch8.coverage" NAME="Slither_Ch8 Coverage Results" MODIFIED="1590224678193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Data_Structure_Priority_Queue.coverage" NAME="Data_Structure_Priority_Queue Coverage Results" MODIFIED="1585024993641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Exercise_mergesort.coverage" NAME="Exercise_mergesort Coverage Results" MODIFIED="1583032649332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$14_Object_Introspection.coverage" NAME="14_Object_Introspection Coverage Results" MODIFIED="1583356173185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Data_Structures_LinearBinarySearch.coverage" NAME="Data_Structures_LinearBinarySearch Coverage Results" MODIFIED="1585021497293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$17_Classes.coverage" NAME="17_Classes Coverage Results" MODIFIED="1583793572278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Data_Structure_Place_Reversal.coverage" NAME="Data_Structure_Place_Reversal Coverage Results" MODIFIED="1585282588418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Data_Structure_Insertandprintnodes.coverage" NAME="Data_Structure_Insertandprintnodes Coverage Results" MODIFIED="1585511041736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$9_5_Class_attribute_vs_Instance_attribute.coverage" NAME="9.5_Class_attribute_vs_Instance_attribute Coverage Results" MODIFIED="1581963859905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$IC_Word_Cloud.coverage" NAME="IC_Word_Cloud Coverage Results" MODIFIED="1588394529020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Real_Python_Dictionaries.coverage" NAME="Real_Python_Dictionaries Coverage Results" MODIFIED="1584393703731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$slither_ch3.coverage" NAME="slither_ch3 Coverage Results" MODIFIED="1589016544979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Note_1_ForLoop.coverage" NAME="Note_1_ForLoop Coverage Results" MODIFIED="1598431081908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Algorithms_Sort.coverage" NAME="Algorithms_Sort Coverage Results" MODIFIED="1583270423128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$test.coverage" NAME="test Coverage Results" MODIFIED="1599723096039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Real_Python_Queues.coverage" NAME="Real_Python_Queues Coverage Results" MODIFIED="1584569090743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Slither_ch2.coverage" NAME="Slither_ch2 Coverage Results" MODIFIED="1588905578115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$HR_BirthdayCandles.coverage" NAME="HR_BirthdayCandles Coverage Results" MODIFIED="1598330197798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$18_Lambdas.coverage" NAME="18_Lambdas Coverage Results" MODIFIED="1583793709484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Slither_ch7.coverage" NAME="Slither_ch7 Coverage Results" MODIFIED="1590052033411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$3_Generators.coverage" NAME="3_Generators Coverage Results" MODIFIED="1598431076096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Algorithims_Selection_Sort.coverage" NAME="Algorithims_Selection_Sort Coverage Results" MODIFIED="1585186542308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$12_Collections.coverage" NAME="12_Collections Coverage Results" MODIFIED="1583029273753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Slither_ch13.coverage" NAME="Slither_ch13 Coverage Results" MODIFIED="1594622781401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$8_Global_and_Return.coverage" NAME="8_Global_and_Return Coverage Results" MODIFIED="1581497870788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$15_Comprehensions.coverage" NAME="15_Comprehensions Coverage Results" MODIFIED="1583523369161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Exceptions.coverage" NAME="Exceptions Coverage Results" MODIFIED="1583525874472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$16_Exceptions__1_.coverage" NAME="16_Exceptions (1) Coverage Results" MODIFIED="1583738303309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$IC_BottomupAlgo.coverage" NAME="IC_BottomupAlgo Coverage Results" MODIFIED="1597731517643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Data_Structure_SingleLinkedListEX2.coverage" NAME="Data_Structure_SingleLinkedListEX2 Coverage Results" MODIFIED="1586038250367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Memoization.coverage" NAME="Memoization Coverage Results" MODIFIED="1594670017253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Slither_ch12_sorting.coverage" NAME="Slither_ch12_sorting Coverage Results" MODIFIED="1593291532891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Real_Python_Stack.coverage" NAME="Real_Python_Stack Coverage Results" MODIFIED="1584402662762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$scrath.coverage" NAME="scrath Coverage Results" MODIFIED="1586238091782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Algorithims_bubble_sort.coverage" NAME="Algorithims_bubble_sort Coverage Results" MODIFIED="1584729685588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$IC_Reverse_Words.coverage" NAME="IC_Reverse_Words Coverage Results" MODIFIED="1586650177581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$34_word_cloud.coverage" NAME="34-word-cloud Coverage Results" MODIFIED="1588560634111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../interview-cake" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Slither_ch10.coverage" NAME="Slither_ch10 Coverage Results" MODIFIED="1590811917125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$IC_Merged_storted_arrays.coverage" NAME="IC_Merged_storted_arrays Coverage Results" MODIFIED="1586898876538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$IC_Palindrome_Permutation.coverage" NAME="IC_Palindrome_Permutation Coverage Results" MODIFIED="1587507648503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$9_Mutation.coverage" NAME="9_Mutation Coverage Results" MODIFIED="1581842218663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Slither_ch5.coverage" NAME="Slither_ch5 Coverage Results" MODIFIED="1589346549370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$IC_Reverse_String.coverage" NAME="IC_Reverse_String Coverage Results" MODIFIED="1586715481971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Slither_ch11.coverage" NAME="Slither_ch11 Coverage Results" MODIFIED="1592123026040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Slither_ch4.coverage" NAME="Slither_ch4 Coverage Results" MODIFIED="1589052435141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Exercise_Super__.coverage" NAME="Exercise_Super() Coverage Results" MODIFIED="1581628408325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1588626751846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Interview-Cake-Victor" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$practice_scratch.coverage" NAME="practice_scratch Coverage Results" MODIFIED="1590901776413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$Algorithims_Insertion_Sort.coverage" NAME="Algorithims_Insertion_Sort Coverage Results" MODIFIED="1585035491038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$IC_Inflight_Entertainment.coverage" NAME="IC_Inflight_Entertainment Coverage Results" MODIFIED="1587495760723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Tutorial_Workbook$practice.coverage" NAME="practice Coverage Results" MODIFIED="1593585991444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
