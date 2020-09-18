@@ -8,6 +8,7 @@ Find: whether or not both kangaroos eventually jump to the same spot
 Time Complexity: O(1)  Space Complexity: O(1)
 Worse case for time is O(10000) best case is O(1)
 """
+
 def kangaroo(x1, v1, x2, v2):
     j1 = 0
     j2 = 0  # number of jumps by kangaroo 1 & 2
@@ -21,6 +22,5 @@ def kangaroo(x1, v1, x2, v2):
         j1 += 1
         j2 += 1
 
-
-print(kangaroo(0,3,4,2)) # ans: YES
-print(kangaroo(0,2,5,3)) # ans: NO
+# To test this solution use kangaroo_test.py found in this directory
+#i.e from terminal while in this directory run <python3 kangaroo_test.py>
