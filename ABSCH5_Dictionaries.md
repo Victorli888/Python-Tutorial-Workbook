@@ -53,3 +53,25 @@ print(f"{ex_dict.get('name')} is {ex_dict.get('age')}, and he's {ex_dict.get('co
 #### Using Data structures to Model Real-World Things
 We can use a hashmap to chart grid locations like the positions of a *Chess Board*. A Tic Tac Toe Hash is a simplified
 chess board so our first example with that.
+
+#### Nested Dictionary
+```python
+# Personalized Shopping Lists
+
+allCustomers = {'Alice': {'apples': 5, 'pretzels': 12},
+                'Bob': {'ham': 2, ' bread': 1, 'apples': 3},
+                'Carol': {'cups': 2, 'apple pie': 2}}
+
+
+def total_brought(guests, item):  # determine the number total number of apples bought
+    numbrought = 0
+    for k, v in guests.items():
+        numbrought = numbrought + v.get(item,0)
+
+    return numbrought
+
+
+print(f"Total of Apples brought was: {total_brought(allCustomers, 'apples')}")  # 8 Apples total
+
+
+```
