@@ -1,4 +1,4 @@
-## Automate The Boring Things! CH3 Dictionaries
+## Automate The Boring Things! CH5 Dictionaries
 
 #### Dictionaries vs Lists
 
