@@ -1,0 +1,36 @@
+## Automate The Boring Things! CH6 String Manipulations
+
+* Escape Characters
+* In & Not In Operators for strings
+
+#### String Methods
+* upper()
+* lower()
+<br>
+True if,
+* isupper() - at least on string letter is uppercase
+* islower() - at least on string letter is lowercase
+
+#### isX String Methods
+True if,
+* isalpha() - only lowercase & not blank
+* isalnum() - only num, letters, & not blank
+* isdecimal() - only numerica chars & not blank
+* isspace() - only spaces, tabs, new-lines, & not blank
+
+**use these methods to validate user input**
+#### More string methods
+* startswith()
+* endswith()
+* join()
+* split()
+
+#### Justifying text
+* rjust()
+* ljust()
+* center()
+
+#### Removing Whitespace
+* strip()
+* rstrip()
+* lstrip()
