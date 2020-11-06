@@ -25,20 +25,35 @@ print("Example 2: Binary Search")  # for a sorted list
 print("Find whether 14 is present in the given list\n")
 given = [2,3,4,5,6,7,8,9,14,54]
 
-def binary_search(list, data):
-    first = 0
-    last = len(list)-1
-    done = False
+def binary_search(arr, target):  # search_for = What number we are searching for
+    # Initialize Variables for binary search
+    si = 0  # Starting Index
+    ei = len(arr)-1  # Ending Index
+    searching = True
 
-    while first <= last and not done:
-        mid = (first + last)//2
-        if list[mid] == data:
-            done = True
+    while searching:
+        # Start in the middle
+        mi = (si+ei)//2  # Middle Index
+
+        # IF Value is found
+        if arr[mi] == target:
+            print(f"Found {target} at index {mi}")
+            searching = False  # stop searching
+            return mi  # Terminates the program
+
+
+        elif si+1 == ei:  # If we searched the entire array and can't find the target
+            print(f"{target} could not be found")
+            searching = False
+
+        # Else continue searching
         else:
-            if list[mid] > data:
-                last = last-1
-            else:
-                first = first+1
-    return done
+            if arr[mi] > target:  # What we're searching for is a smaller number
+                # Go left
+                ei = mi  # Middle index is now the new Ending Index or Ceiling
+            else:  # What we're searching for is a larger number
+                # Go Right
+                si = mi  # middle index is the new Starting index or Floor
 
-print(binary_search(given,14))
+
+binary_search(given, 7)  # Test  Value 7 should be found at index 5
