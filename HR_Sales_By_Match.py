@@ -16,11 +16,13 @@ def findPairs(arr):
     :return: Total Number of pairs in our array
     """
     count = {}
+    numOfPairs = 0
+
     for item in arr:
         count[item] = 0
     for item in arr:
         count[item] += 1
-    numOfPairs = 0
+
     for item in count:
         numOfPairs += int(count[item] // 2)
     return numOfPairs

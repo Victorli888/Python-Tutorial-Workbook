@@ -24,21 +24,41 @@ print("now let's swap them.")
 print(swap(A,B))
 
 print("\n\nExample 1: Bubble sort")
-def bubbleSort(list):
+def bubbleSort(arr):
     # Setting the range for comparison ( 1st round n, 2nd round n-1, etc.
-    for i in range(len(list)-1,0,-1):
+    for i in range(len(arr)-1,0,-1):
         # Compare within the set range
         for j in range(i):
             # compare elements with it's right side neighbor
-            if list[j] > list[j+1]:
+            if arr[j] > arr[j+1]:
                 #swap
-                temp = list[j]
-                list[j] = list[j+1]
-                list[j+1] = temp
-    return list
+                temp = arr[j + 1]
+                arr[j + 1] = arr[j]
+                arr[j] = temp
+    return arr
+
+def bubbleSort2(arr):  # This doesn't work this is a common mistake in implementation
+    for i in range(0, len(arr)):
+        for j in range(i):
+            if arr[j] > arr[j+1]:
+                # Swap them
+                temp = arr[j + 1]
+                arr[j + 1] = arr[j]
+                arr[j] = temp
+    return arr
+
+
+def bubbleSort3(arr):
+    for i in range(len(arr)-1, 0,-1):
+        for j in range(i):
+            if arr[j] >= arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+
+    return arr
 
 print(bubbleSort([5,1,4,3,6,8,9,0,2,7]))
-
+print(bubbleSort2([5,1,4,3,6,8,9,0,2,7]))
+print(bubbleSort3([5,1,4,3,6,8,9,0,2,7]))
 
 print("\n\nNotes: range(len(list)-1,0,-1)")
 # if we used len(list) it would put us outside the range of our list because our list starts at 0 take for example:
@@ -51,3 +71,4 @@ print(f"If we were to take len(g) we would get {len(g)}")
 
 # in other words, to simplfy range(len(list)-1,0,-1) we are simply saying:
 # range(last_element, First_element, go_backwards by 1)
+

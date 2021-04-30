@@ -16,7 +16,7 @@
 
 def insertionSort(alist):
 
-    for i in range(1, len(alist)):
+    for i in range(0, len(alist)):
 
         # element to be compared
         current = alist[i]
@@ -30,5 +30,22 @@ def insertionSort(alist):
         #print(alist)  # uncomment this part to see how the list actually gets sorted.
     return alist
 
+def recursive(arr, n):
+    if n > len(arr):
+        return
+
+    recursive(arr, n+1)
+    curr = arr[n+1]
+    while curr > 0 and arr[n+2] > curr:
+        arr[n+1] = arr[n+2]
+        curr -= 1
+    n += 1
+    return arr
+
+
+
+
+
+
 list = [2,5,8,0,4,7,9,12,3,5,7]
-print(insertionSort(list))
+print(recursive(list, 0))
