@@ -14,6 +14,10 @@ def list_frequent_elements(nums, k):
     count = {}
     # freq is a list of buckets that will hold number from least to most frequent.
     # The index of the bucket describes the frequency and the element is the number from the given list
+
+    # freq[0] would be hold the bucket numbers that don't occur, technically that should always be empty.
+    # the range of len(nums) would then mean freq wouldn't be able to hold the maximum number of occurrences
+    # i.e nums = [1], range(1) would create a bucket ONLY for index 0. For index 1,  len(nums)+1 would be needed
     freq = [[] for num in range(len(nums)+1)]
 
     # iterate and populate count hashmap
