@@ -17,7 +17,8 @@ def using_hashsets(board):
     Detecting Duplicates, it makes sense to implement a hashset solution
     :param board: Given board with numbers ( nested list)
     :return: True if numbers present in board are valid
-
+    Time Complexity: O(1), nested for loop is fixed at 81 iterations & lookup time of a hashset is O(1)
+    Space: O(1)
 
     """
     rows = collections.defaultdict(set)
